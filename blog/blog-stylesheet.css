@@ -1,0 +1,53 @@
+html {
+	background:#F5DEB3;
+}
+
+h1 {
+	color: rgb(6, 0, 255);
+	font-size: 3em;
+	margin-top: auto;
+	padding-top: 0.25em;
+	text-align:left;
+	margin-bottom: -0.25em;
+	padding-bottom: 0.1em;
+}
+
+header {
+	position: relative;
+	border-bottom: 2px solid gray;
+	padding-bottom: 2.8em;
+}
+
+h2 {
+	color: blue;
+    font-size: 1.25em;
+    padding-bottom:1em;
+    text-align: left;
+    position: absolute;
+    display: inline;
+}
+
+h4 {
+	color:blue;
+    position: absolute;
+    display: inline;
+    right: 0;
+}
+
+img {
+	float: left;
+	height:12em;
+	width:12em;
+	padding-right: 2em;
+	padding-bottom: 2em;
+	padding-left: 1em;
+
+}
+
+section {
+	font-size: 1.25em;
+	padding-left:0.5em;
+	line-height: 1.2;
+}
+
+
