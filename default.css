@@ -19,7 +19,7 @@
 
 .navi ul li{
 	list-style-type: none;
-	color: blue;
+	color: black;
 	background-color: gray;
 	padding-top:1em;
 	padding-bottom:1em;
@@ -53,7 +53,23 @@
 	margin-left:5%;
 }
 
-.about section {
+.about .past {
+	width:27%;
+	height:50%;
+	position:relative;
+	border:solid black 2px;
+	display: inline-block;
+}
+
+.about .present {
+	width:27%;
+	height:50%;
+	position:relative;
+	border:solid black 2px;
+	display: inline-block;
+}
+
+.about .future {
 	width:27%;
 	height:50%;
 	position:relative;
@@ -66,9 +82,12 @@
 	padding-bottom: 1em;
 }
 
+.about section p {
+	padding: 0.5em;
+}
 
 .about h3 {
-	padding-bottom: 2em;
+	padding-bottom: 1.5em;
 }
 
 .footer {
