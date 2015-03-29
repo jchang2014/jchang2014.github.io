@@ -1,0 +1,86 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.navi { /* figure out how to extend to bottom; 100% height isnt working */
+	display: inline-block;
+	position: relative;
+	vertical-align:top;
+	top:0;
+	left:0;
+	width:5%;
+	height:100%;
+}
+
+.navi ul {
+	-webkit-padding-start:0px;
+}
+
+.navi ul li{
+	list-style-type: none;
+	color: blue;
+	background-color: gray;
+	padding-top:1em;
+	padding-bottom:1em;
+	text-align:center;
+	border: double;
+}
+
+.header {
+	text-align: center;
+	background-color: gray;
+	border: double;
+	display: inline-block;
+	position: absolute;
+	right:0;
+	top:0;
+	width:94.6%;
+	height:9.75em;
+	padding-top: auto;
+	padding-bottom: auto;
+}
+
+.header h1 {
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+
+.about {
+	text-align:center;
+	position:relative;
+	padding-top:2em;
+	margin-left:5%;
+}
+
+.about section {
+	width:27%;
+	height:50%;
+	position:relative;
+	border:solid black 2px;
+	display: inline-block;
+}
+
+.about section h3 {
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+
+
+.about h3 {
+	padding-bottom: 2em;
+}
+
+.footer {
+	background: gray;
+	border:double;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	text-align:center;
+}
+
+.footer ul li{
+	display: inline-block;
+	padding-left:1em;
+}
