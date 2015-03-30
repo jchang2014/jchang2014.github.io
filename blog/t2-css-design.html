@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<head>
+  <title>CSS Design</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+</head>
+
+<main>
+  <h1>Margins and Padding are driving me Borderline insane.</h1>
+  <header>
+    <h2>About the CSS Box Model</h2>
+    <h4>March 29th, 2015</h4>
+  </header>
+
+  <section>
+    <p>
+      <img src="../imgs/box-model.gif" />
+      The box model is the term used in CSS for the way that elements can be positioned for layouts. It consists of 4 concentric square (or rectangular) parts: the content, padding, border, and margin. The innermost part is our content, and each subsequent part is another box surrounding the previous part. 
+    <p>
+      To help understand this concept, and to differentiate each part, I use the example of parking in a parking spot. In a fair world, we would have huge spacious parking spots, and none of us would ever have those annoying dents and scratches on our car doors. Unfortunately, that is far from the case, but if we could use the box model of CSS to change the size of our parking spaces it probably would go something like this:
+    </p>
+    <img src="../imgs/car-model.png" />
+    <p>
+      In this case, our car is our "Content." If we're any good at parking, we've parked in the center and not on the lines, so this space between our car and the lines would be the "Padding." If we increase or decrease the padding, it would push the lines further or closer to our car. For the sake of this example, I haven't included the front and back of the car, but the space in front and back would also be considered part of the "Padding" as well. While we're mentioning the lines, those would be considered our "Border," and again for the sake of this example I've left out the left and right sides. We can customize our border by style, thickness, and color. Finally, the space between the lines and the next car over would be considered our "Margin." If we increased the margin, it would push the adjacent element away, or if we decreased it would come closer. 
+    </p>
+    <p>
+      Just imagine how much easier parking would be if we could just use CSS on parking spots!
+    </p>
+  </section>
+
+</main>
