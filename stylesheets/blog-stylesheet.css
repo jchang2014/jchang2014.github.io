@@ -34,10 +34,10 @@ h4 {
     right: 0;
 }
 
-img {
+section p img {
 	float: left;
-	height:12em;
-	width:12em;
+	height:10em;
+	width:10em;
 	padding-right: 2em;
 	padding-bottom: 2em;
 	padding-left: 1em;
@@ -50,6 +50,18 @@ section {
 	line-height: 1.2;
 }
 
-.blogposts {
-	border:solid black 2px;
+section img {
+	display:block;
+	float:right;
+	width:15em;
+	height:15em;
+	padding:1em;
 }
+
+section p {
+	padding-top:1em;
+	text-indent:1em;
+	display:block;
+	position:relative;
+}
+

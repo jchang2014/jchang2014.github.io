@@ -3,6 +3,9 @@
 	padding: 0;
 }
 
+body {
+	background:white;
+}
 .navi { /* figure out how to extend to bottom; 100% height isnt working */
 	display: inline-block;
 	position: relative;
@@ -50,7 +53,7 @@
 	text-align:center;
 	position:absolute;
 	padding-top:2em;
-	margin-left:5%;
+	padding-left:5%;
 }
 
 .about .past {
