@@ -62,6 +62,7 @@ body {
 	position:relative;
 	border:solid black 2px;
 	display: inline-block;
+	float:left;
 }
 
 .about .present {
@@ -70,6 +71,7 @@ body {
 	position:relative;
 	border:solid black 2px;
 	display: inline-block;
+	float:none;
 }
 
 .about .future {
@@ -78,6 +80,7 @@ body {
 	position:relative;
 	border:solid black 2px;
 	display: inline-block;
+	float:right;
 }
 
 .about section h3 {
