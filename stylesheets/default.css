@@ -44,6 +44,10 @@ body {
 	height:9.75em;
 	padding-top: auto;
 	padding-bottom: auto;
+	background-image:url("../imgs/banner.jpeg");
+	background-repeat:no-repeat;
+	background-size:100%
+
 }
 
 .header h1 {
@@ -134,18 +138,28 @@ body {
 	display:inline-block;
 	position:relative;
 	width:40%;
+	height:40%;
 	vertical-align:center;
 	text-align:center;
 	background:gray;
+	float:left;
+	margin-top:30px;
+	margin-left:75px;
+	padding-bottom:2em;
 }
 
 .blogposts .Culture {
 	display:inline-block;
 	position:relative;
 	width:40%;
+	height:40%;
 	vertical-align:center;
 	text-align:center;
 	background:gray;
+	float:right;
+	margin-top:30px;
+	margin-right:75px;
+	padding-bottom:2em;
 }
 
 .blogposts h3 {
@@ -154,5 +168,10 @@ body {
 }
 
 .blogposts img {
+	padding-bottom:1em;
+	width:60%;
+}
+
+.blogposts p{
 	padding-bottom:1em;
 }
