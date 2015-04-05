@@ -16,16 +16,26 @@ body {
 	left:0;
 	width:5%;
 	height:100%;
+
+}
+
+.navi a {
+	color:#F0F0BF;
 }
 
 .navi ul {
 	-webkit-padding-start:0px;
+	color:#F0F0BF;
+}
+
+a {
+	text-decoration:none;
 }
 
 .navi ul li{
 	list-style-type: none;
 	color: black;
-	background-color: gray;
+	background-color:#004056;
 	padding-top:1em;
 	padding-bottom:1em;
 	text-align:center;
@@ -34,7 +44,6 @@ body {
 
 .header {
 	text-align: center;
-	background-color: gray;
 	border: double;
 	display: inline-block;
 	position: absolute;
@@ -44,24 +53,28 @@ body {
 	height:9.75em;
 	padding-top: auto;
 	padding-bottom: auto;
-	background-image:url("../imgs/banner.jpeg");
+	background-color:#004056;
 	background-repeat:no-repeat;
-	background-size:100%
-
+	background-size:100%;
 }
 
 .header h1 {
 	padding-top: 1em;
 	padding-bottom: 1em;
+	color:#F0F0BF;
 }
 
+.header h3 {
+	color:#F0F0BF;
+}
 .about {
 	text-align:center;
 	position:absolute;
 	padding-top:2em;
 	padding-left:5%;
 	display:block;
-	margin-bottom: 50px;
+	padding-bottom:30px;
+	background-color:#2C858D;
 }
 
 .about .past {
@@ -71,6 +84,7 @@ body {
 	border:solid black 2px;
 	display: inline-block;
 	float:left;
+	background-color:#74ceb7;
 }
 
 .about .present {
@@ -80,6 +94,7 @@ body {
 	border:solid black 2px;
 	display: inline-block;
 	float:none;
+	background-color:#74ceb7;
 }
 
 .about .future {
@@ -90,6 +105,7 @@ body {
 	display: inline-block;
 	float:right;
 	margin-right:20px;
+	background-color:#74ceb7;
 }
 
 .about section h3 {
@@ -114,14 +130,15 @@ body {
 }
 
 .footer {
-	background: gray;
+	background-color:#004056;
 	border:double;
 	position: fixed;
 	bottom:0;
 	width: 100%;
 	text-align:center;
-	margin-top:200px;
 	display:block;
+	height:16px;
+	padding:0.5px;
 }
 
 .footer ul li{
@@ -129,9 +146,14 @@ body {
 	padding-left:1em;
 }
 
+.footer a {
+	color:#F0F0BF;
+}
+
 .blogposts {
-	margin-left:5%;
-	margin-top:0.5em;
+	background-color:#2C858D;
+	position:absolute;
+	padding-bottom:55px;
 }
 
 .blogposts .Tech {
@@ -141,7 +163,7 @@ body {
 	height:40%;
 	vertical-align:center;
 	text-align:center;
-	background:gray;
+	background-color:#74ceb7;
 	float:left;
 	margin-top:30px;
 	margin-left:75px;
@@ -155,7 +177,7 @@ body {
 	height:40%;
 	vertical-align:center;
 	text-align:center;
-	background:gray;
+	background-color:#74ceb7;
 	float:right;
 	margin-top:30px;
 	margin-right:75px;
