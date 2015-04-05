@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<head>
+  <title>Arrays and Hashes</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+</head>
+
+<main>
+  <h1>I'll have the Arrays with a side of Hashes please!</h1>
+  <header>
+    <h2>About Using Arrays and Hashes in Ruby.</h2>
+    <h4>4/4/15</h4>
+  </header>
+
+  <section>
+    <p>
+      Arrays and hashes are very useful tools for storing information in Ruby, but it's very easy to get confused between the two. Both are contained in brackets, both can be used to store lists of numbers and strings, and both can be accessed using "indexes". However, the fundamental difference lies in the latter similarity. 
+    <p>
+      Arrays are essentially lists of elements(numbers or strings), that are contained within a set of square brackets([]). They are very useful for just that, holding lists of information. Let's say you wanted to go grocery shopping, and wanted to make a list of the things you wanted to buy at the store. If for some reason you bring around a Ruby terminal instead of a pen and paper, you could store this list in an array like so:
+        <span>shopping_list = ['Milk', 'Eggs', 'Bread', 'Chicken', 'Salad']</span>
+      Now a list isn't very useful unless you can refer to it later, so you would need a way to call out what you've stored. Luckily, when we input values into arrays, they are automatically assigned "indexes" according to the order they've been entered. Programmers start counting from 0 though, so the first value's index is 0, the second is 1, and so on. So, if we wanted to call up the 3rd item in the list(Bread), we would type this:
+        <span>puts shopping_list[2]</span> 
+    </p>
+    <p>
+      Now, hashes are quite similar, but work in a slightly different way. Like arrays, they store lists of information, but this time are contained in curly brackets({}). And this time, instead of just listing each value and having the index be automatically assigned, we choose what index is assigned to each value like so:
+        <span>shopping_list = {'Milk' => $3.50, 'Eggs' => $2.00, 'Bread' => $2.50, 'Chicken' => $6.00, 'Salad' => $4.50}</span>
+      </p>
+      <p>
+        This is potentially useful if you're trying to budget out how much you're going to spend at the store, or if you want to calculate how much money you may need to bring. It's also useful for the store itself so that they know how much to charge you. Now, if we want to figure out how much bread costs($2.50), all we would have to do is type this:
+        <span>puts shopping_list['Bread']</span>
+    </p>
+    <p>
+      Hopefully now you know a little bit more about arrays and hashes, and know how and when to use them! 
+    </p>
+  </section>
+
+</main>
