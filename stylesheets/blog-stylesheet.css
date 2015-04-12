@@ -65,7 +65,7 @@ section p {
 	position:relative;
 }
 
-section p span {
+section p code {
 	display:block;
 	margin-top:1em;
 	margin-bottom:1em;
@@ -74,4 +74,10 @@ section p span {
 	margin-left:auto;
 	margin-right:auto;
 	width:45em;
+	font-family:monospace, sans-serif;
+	font-size:0.8em;
+}
+
+section p code span {
+	color:red;
 }

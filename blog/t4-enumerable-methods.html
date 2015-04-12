@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<head>
+  <title>Enumerable Methods</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+</head>
+
+<main>
+  <h1>Enumeration, what's your function?</h1>
+  <header>
+    <h2>About Enumerable#map</h2>
+    <h4>April 11, 2015</h4>
+  </header>
+
+  <section>
+    <p>
+      The method .map is very handy when you want to transform all the elements in an array. Normally, you could try to use a <strong>for</strong> loop, but this changes the original input array. If you want to transform without having to change the original array, you can use .map to iterate over the array. Additionally, if you actually do want to modify the original array, you simply have to use .map! In either case, .map is an important tool when applying changes over an entire array. 
+    </p>
+    <p>
+      For example, if you went out to eat with your friends and wanted to figure out each person/s bill, you could put the prices into an array. However, rather than add tip to each person's price individually, you could use .map to iterate over the array like so:
+        <code>bill = [4, 5, 7, 8, 10]</code>
+        <code>bill_plus_tip = bill.map { |price| price * 1.2}</code>
+        <code>puts bill_plus_tip.join(", ")  </code>
+        <code><span>#=> 4.8, 6.0, 8.4, 9.6, 12.0</span></code>
+    </p>
+    <p>
+      Not only can you use .map to iterate over number based arrays, you can also use it to transform arrays of strings. Say for example you had an array containing the names of everyone you wanted to invite to a special event. However, you realize you forgot to capitalize the names of everyone in the array. No problem, just use .map to capitalize every name in the array like so:
+        <code>invite = ["john", "mary", "bill", "helen", "erica"]</code>
+        <code>proper_invite = invite.map {|name| name.capitalize}</code>
+        <code>puts proper_invite.join(", ")</code>
+        <code>#=> John, Mary, Bill, Helen, Erica</code>
+    </p>
+    <p>
+      As you can see, enumerables are extremely useful tools in programming that allow us to take a function and apply it numerous times across the values we need them to. This often saves us lots of time and effort, in addition to allowing us to make our code much shorter and easier to read.
+    </p>
+  </section>
+
+</main>
