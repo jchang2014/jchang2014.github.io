@@ -50,12 +50,20 @@ section {
 	line-height: 1.2;
 }
 
-section img {
+section right img {
 	display:block;
 	float:right;
 	width:15em;
 	height:15em;
 	padding:1em;
+}
+
+section center img {
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	width:800px;
+	height:15em;
 }
 
 section p {
