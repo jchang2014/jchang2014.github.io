@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<head>
+  <title>Classes and Attributes</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+</head>
+
+<main>
+  <h1>It's time to get Classy!</h1>
+  <header>
+    <h2>About using Classes in Ruby.</h2>
+    <h4>April 19, 2015</h4>
+  </header>
+
+  <section>
+    <p>
+      When we talk about classes in Ruby, we're really talking about types of objects we're using. For example, a number such as 1 is an instance of the Fixnum class, a string such as "I am a string" is an instance of the String class, and an array such as [1,2,3] is an instance of the Array class. Classes allow us to group similar objects, and automatically give them functions that are useful for that type of object. For example, Fixnums can be added together easily just by typing + in between them, because Ruby recognizes them as integers automatically. However, one of the most useful things about classes is that we can create our own classes to suit our needs. 
+    <p>
+      <img src="../imgs/class.png" />
+      For a clear example, we're going back to the grocery store again. As you can see here, I've created a class called StockList, which is capitalized so that we know it's a class and not just a variable. Under the initalize method, I've given each instance of StockList three parameters: name, price, and quantity. This means that every time we create a new instance of StockList, we can customize it with the item's name, price, and quantity from the getgo. I've also created a method called status, which will print to the terminal those same values we put in, once #status is called. Here's how they work:
+        <code>cookies = StockList.new('Chocolate Chip', 5.00, 20)</code>
+        <code>cookies.status #=> We have 20 of Chocolate Chip, and it costs $5.00 each.</code>
+    </p>
+    <p>
+      Now, while it may seem that we only have these two methods, if you look back up to the top you'll see three attr methods. They may not seem like much, but they will allow us to do functions just by calling their names. Attr_reader allows us to assign a value to the parameter through initialize, and once it is called as a method it will display the value. However, once initialized it cannot be rewritten later. Attr_writer on the other hand, can be rewritten later on, but not called upon as a method to read. Fortunately, attr_accessor covers both bases by allowing us to both read and write to it. This can get a bit confusing, so we'll look at examples:
+        <code>p cookies.price #=> 5.00</code>
+        <code>p cookies.quantity #=> 20</code>
+        <code>p cookies.name #=> undefined method 'name'(NoMethodError)</code>
+      As you can see, just by typing the methods cookies.price and cookies.quantity, we have been given the price and quantity of cookies! However, when we did the same with name, we got a method error. This is due to the fact that attr_writer can't be read outside the class! Now what happens when we try to rewrite the attr_reader quantity?
+      <code>cookies.quantity = 15 #=> undefined method 'quantity=' (NoMethodError)</code>
+      Just like when we tried to read the writer attribute "name", we got a method error when we tried to write the reader attribute "quantity". But now let's look at the good examples of what happens when we rewrite the writer and accessor attributes:
+        <code>cookies.name = 'Oatmeal Raisin'</code>
+        <code>cookies.price = 6.00</code>
+        <code>cookies.status #=> We have 20 of Oatmeal Raisin, and it costs $6.00 each.<code>
+      The name and price have been printed to reflect the changes we made! Hopefully now you can see how useful classes are, and how we can use attribute methods as a simple way to call our values!
+    </p>
+  </section>
+
+</main>
