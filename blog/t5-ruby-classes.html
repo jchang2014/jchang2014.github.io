@@ -15,8 +15,9 @@
   <section>
     <p>
       When we talk about classes in Ruby, we're really talking about types of objects we're using. For example, a number such as 1 is an instance of the Fixnum class, a string such as "I am a string" is an instance of the String class, and an array such as [1,2,3] is an instance of the Array class. Classes allow us to group similar objects, and automatically give them functions that are useful for that type of object. For example, Fixnums can be added together easily just by typing + in between them, because Ruby recognizes them as integers automatically. However, one of the most useful things about classes is that we can create our own classes to suit our needs. 
+    </p>
+    <center><img src="../imgs/class.png" /></center>
     <p>
-      <img src="../imgs/class.png" />
       For a clear example, we're going back to the grocery store again. As you can see here, I've created a class called StockList, which is capitalized so that we know it's a class and not just a variable. Under the initalize method, I've given each instance of StockList three parameters: name, price, and quantity. This means that every time we create a new instance of StockList, we can customize it with the item's name, price, and quantity from the getgo. I've also created a method called status, which will print to the terminal those same values we put in, once #status is called. Here's how they work:
         <code>cookies = StockList.new('Chocolate Chip', 5.00, 20)</code>
         <code>cookies.status #=> We have 20 of Chocolate Chip, and it costs $5.00 each.</code>
@@ -31,7 +32,7 @@
       Just like when we tried to read the writer attribute "name", we got a method error when we tried to write the reader attribute "quantity". But now let's look at the good examples of what happens when we rewrite the writer and accessor attributes:
         <code>cookies.name = 'Oatmeal Raisin'</code>
         <code>cookies.price = 6.00</code>
-        <code>cookies.status #=> We have 20 of Oatmeal Raisin, and it costs $6.00 each.<code>
+        <code>cookies.status #=> We have 20 of Oatmeal Raisin, and it costs $6.00 each.</code>
       The name and price have been printed to reflect the changes we made! Hopefully now you can see how useful classes are, and how we can use attribute methods as a simple way to call our values!
     </p>
   </section>
