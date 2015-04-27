@@ -68,7 +68,7 @@ section center img {
 
 section p {
 	padding-top:0.5em;
-	text-indent:1em;
+	text-indent:2em;
 	display:block;
 	position:relative;
 }
@@ -81,11 +81,30 @@ section p code {
 	background-color:#fff0f0;
 	margin-left:auto;
 	margin-right:auto;
-	width:45em;
+	width:60em;
 	font-family:monospace, sans-serif;
 	font-size:0.8em;
+	text-indent:0;
+}
+
+section p methodcode {
+	display:block;
+	margin-top:1em;
+	margin-bottom:1em;
+	text-align:left;
+	background-color:#fff0f0;
+	margin-left:auto;
+	margin-right:auto;
+	width:35em;
+	font-family:monospace, sans-serif;
+	font-size:0.8em;
+	text-indent:0;
 }
 
 section p code span {
 	color:red;
+}
+
+highlight {
+	background-color:yellow;
 }
