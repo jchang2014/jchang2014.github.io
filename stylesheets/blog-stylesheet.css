@@ -108,3 +108,9 @@ section p code span {
 highlight {
 	background-color:yellow;
 }
+
+.gist {
+	display:inline-block;
+	margin-left:150px;
+	width:400px;
+}
