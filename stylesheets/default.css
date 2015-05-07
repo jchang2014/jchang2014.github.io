@@ -153,6 +153,7 @@ a {
 .blogposts {
 	background-color:#2C858D;
 	position:absolute;
+	width:100%;
 	padding-bottom:55px;
 }
 
@@ -164,10 +165,10 @@ a {
 	vertical-align:center;
 	text-align:center;
 	background-color:#74ceb7;
-	float:left;
 	margin-top:30px;
 	margin-left:75px;
 	padding-bottom:2em;
+	float:left;
 }
 
 .blogposts .Culture {
@@ -178,9 +179,22 @@ a {
 	vertical-align:center;
 	text-align:center;
 	background-color:#74ceb7;
-	float:right;
 	margin-top:30px;
 	margin-right:75px;
+	padding-bottom:2em;
+	float:right;
+}
+
+.blogposts .Cheatsheets {
+	display:inline-block;
+	position:relative;
+	width:1130px;
+	height:40%;
+	vertical-align:center;
+	text-align:center;
+	background-color:#74ceb7;
+	margin-top:30px;
+	margin-left:75px;
 	padding-bottom:2em;
 }
 
