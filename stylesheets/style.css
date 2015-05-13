@@ -1,7 +1,12 @@
+body {
+	font-family: 'PT Sans', sans-serif;
+}
+
 .header-content {
-	background: #0284BF;
+	background-image: url("../imgs/rsz_skyline.jpg");
 	background-size:cover;
-	color:black;
+	color:white;
+	height:350px;
 }
 
 a {
@@ -9,7 +14,7 @@ a {
 }
 
 .links {
-	background: #03A9F4;
+	background: #175B7F;
 }
 
 h1, h3, h4, h5 {
@@ -18,19 +23,33 @@ h1, h3, h4, h5 {
 }
 
 .about {
-	padding-top:25px;
-	padding-bottom:25px;
+	padding-top:50px;
+	padding-bottom:50px;
 }
 
-img {
-	padding-left:auto;
-	padding-right:auto;
+.about h4 {
+	padding-bottom:20px;
 }
 
-ul {
-	list-style-type: none;
+.past, .present, .future {
+	text-align:center;
+}
+
+.about h3 {
+	padding-bottom:20px;
+}
+
+.about p {
+	padding-top:10px;
+}
+
+.about img {
+	margin-top:10px;
+	margin-bottom:15px;
 }
 
 .footer {
-	background: #03A9F4;
+	background: #175B7F;
+	font-weight:bold;
+	padding:5px;
 }
