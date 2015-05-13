@@ -1,0 +1,38 @@
+.header-content {
+	background: #0284BF;
+	background-size:cover;
+	color:black;
+}
+
+a {
+	color:black;
+}
+
+.links {
+	background: #03A9F4;
+}
+
+h1, h3, h4, h5 {
+	text-align: center;
+	font-weight:bold;
+}
+
+.about {
+	padding-top:25px;
+	padding-bottom:25px;
+}
+
+
+
+img {
+	padding-left:auto;
+	padding-right:auto;
+}
+
+ul {
+	list-style-type: none;
+}
+
+.footer {
+	background: #03A9F4;
+}
