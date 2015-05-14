@@ -1,3 +1,4 @@
+/* index */
 body {
 	font-family: 'PT Sans', sans-serif;
 }
@@ -25,31 +26,35 @@ h1, h3, h4, h5 {
 .about {
 	padding-top:50px;
 	padding-bottom:50px;
-}
-
-.about h4 {
-	padding-bottom:20px;
-}
-
-.past, .present, .future {
 	text-align:center;
 }
 
-.about h3 {
+.about h3, h4 , .blogs h3{
 	padding-bottom:20px;
 }
 
-.about p {
+.about p, {
 	padding-top:10px;
 }
 
-.about img {
+.about p, img, .blogs img {
 	margin-top:10px;
-	margin-bottom:15px;
+	margin-bottom:30px;
 }
 
 .footer {
 	background: #175B7F;
 	font-weight:bold;
 	padding:5px;
+}
+
+
+/* blog index */
+.blogs {
+	padding-top:25px;
+	padding-bottom:50px;
+	text-align:center;
+}
+.cheatsheets {
+	padding-top:25px;
 }
