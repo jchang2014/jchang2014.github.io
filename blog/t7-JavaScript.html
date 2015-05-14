@@ -1,33 +1,109 @@
 <!DOCTYPE html>
+
 <head>
+  <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
   <title>JavaScript</title>
   <meta charset="UTF-8">
-  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/style.css">
 </head>
 
-<main>
-  <h1>I'm feeling a little Loopy...</h1>
-  <header>
-    <h2>About loops in Ruby vs. loops in JavaScript</h2>
-    <h4>May 3rd, 2015</h4>
-  </header>
+<body>
+  <div class="container-fluid">
+    <div class= "header">
 
-  <section>
-    <p>
-      As we all know by now, loops are arguably one of the most useful tools we have at our disposal for creating functions. Both Ruby and JavaScript allow us to create loops that allow us to perform a code block multiple times efficiently. For example, both have a method called "while" that continues the loop as long as a condition is still true. Here we have Ruby on the left, and JavaScript on the right. As you can see, both have pretty similar logic, but the syntax is slightly different. 
-      <script src="https://gist.github.com/anonymous/12932cc3db786cd6472d.js"></script>
-      <script src="https://gist.github.com/anonymous/883a750f77f21b1a1d48.js"></script>
-    </p>
-    <p>
-      Now let's move on to "for" loops. This is where we start to see a difference between Ruby and JavaScript. In JavaScript, our "for" loops are really limited to the same sort of counter logic, where we have a variable set to a certain integer, and we either add or remove from that integer to continue the loop. However, JavaScript gives us a convenient single-line syntax to do this with. In Ruby, we can do a similar logic, but using a range of numbers from x..y. As you can see, both languages again have similar logic, with slightly different syntax. However, Ruby allows for a bit more flexibility in "for" loops. We can tell it to loop through each item in the array simply by defining what we're looking for.
-      <script src="https://gist.github.com/anonymous/1342e6e7d1a060e0c726.js"></script>
-      <script src="https://gist.github.com/anonymous/c05855fbf367f565f7c2.js"></script>
-      <script src="https://gist.github.com/jchang2014/2d699befd484b689398c.js"></script>
-    </p>
-    <p>
-      In addition to this flexibility, Ruby also gives us an extra method called "until" that works similarly to while, but instead of operating the loop so long as the condition is true, it will continue the loop so long as the condition is false. Hopefully now you can see the similarities and differences between Ruby loops and JavaScript loops. Try them out!
-    </p>
-      <!-- copy and paste as many sections as you want to add paragraphs -->
-  </section>
+      <div class="blog-post-header-content">
+        <div class="row">
+          <div class="col-xs-12">
+            <h1>Jeffrey Chang</h1>
+            <h3>Student. Researcher. Developer.</h3>
+          </div>
+        </div>
+      </div>
 
-</main>
+      <div class="links">
+        <div class="row">
+          <div class="col-xs-4">
+            <h5><a href="../index.html">Home</a></h5> 
+          </div>
+          <div class="col-xs-4">
+            <h5><a href="index.html">Blog</a></h5>
+          </div>
+          <div class="col-xs-4">
+            <h5><a href="mailto:jeffrey.chang2014@gmail.com">Contact</a></h5>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div> <!--close header-->
+
+  <div class="container">
+    <div class="panel panel-default">
+      <div class="panel-body">
+
+        <div class="title">
+          <div class="row">
+            <div class="col-xs-12">
+              <h1>I'm feeling a little Loopy...</h1>
+            </div>
+          </div>
+        </div>
+
+        <div class="subtitle">
+          <div class="row">
+            <div class="col-md-6 col-xs-12">
+              <h3>About loops in Ruby vs. loops in JavaScript.</h3>
+            </div>
+
+            <div class="col-md-6 col-xs-12">
+                <h4>May 3rd, 2015</h4>
+              </div>
+          </div>
+        </div>
+
+        <div class="content">
+          <div class="row">
+            <div class="col-xs-10 col-xs-offset-1">
+              <p>
+                  As we all know by now, loops are arguably one of the most useful tools we have at our disposal for creating functions. Both Ruby and JavaScript allow us to create loops that allow us to perform a code block multiple times efficiently. For example, both have a method called "while" that continues the loop as long as a condition is still true. Here we have Ruby on the left, and JavaScript on the right. As you can see, both have pretty similar logic, but the syntax is slightly different. 
+                  <script src="https://gist.github.com/anonymous/12932cc3db786cd6472d.js"></script>
+                  <script src="https://gist.github.com/anonymous/883a750f77f21b1a1d48.js"></script>
+                </p>
+                <p>
+                  Now let's move on to "for" loops. This is where we start to see a difference between Ruby and JavaScript. In JavaScript, our "for" loops are really limited to the same sort of counter logic, where we have a variable set to a certain integer, and we either add or remove from that integer to continue the loop. However, JavaScript gives us a convenient single-line syntax to do this with. In Ruby, we can do a similar logic, but using a range of numbers from x..y. As you can see, both languages again have similar logic, with slightly different syntax. However, Ruby allows for a bit more flexibility in "for" loops. We can tell it to loop through each item in the array simply by defining what we're looking for.
+                  <script src="https://gist.github.com/anonymous/1342e6e7d1a060e0c726.js"></script>
+                  <script src="https://gist.github.com/anonymous/c05855fbf367f565f7c2.js"></script>
+                  <script src="https://gist.github.com/jchang2014/2d699befd484b689398c.js"></script>
+                </p>
+                <p>
+                  In addition to this flexibility, Ruby also gives us an extra method called "until" that works similarly to while, but instead of operating the loop so long as the condition is true, it will continue the loop so long as the condition is false. Hopefully now you can see the similarities and differences between Ruby loops and JavaScript loops. Try them out!
+                </p>
+
+              </div>
+          </div>
+        </div> <!--content-->
+
+      </div> <!--panel-body-->
+    </div> <!--panel-default-->
+  </div> <!--close container-->
+
+  <div class="container-fluid">
+
+    <div class="footer">
+
+      <div class="row">
+        <div class="col-xs-1"></div>
+        <div class="col-xs-2 text-center"><a href='http://www.linkedin.com/pub/jeffrey-chang/92/a43/883/en'>LinkedIn</a></div>
+        <div class="col-xs-2 text-center"><a href='https://github.com/jchang2014/phase-0-unit-1'>GitHub</a></div>
+        <div class="col-xs-2 text-center"><a href='https://plus.google.com/u/0/105667219180191647019'>Google+</a></div>
+        <div class="col-xs-2 text-center"><a href='https://twitter.com/jeffchang2014'>Twitter</a></div>
+        <div class="col-xs-2 text-center"><a href='mailto:jeffrey.chang2014@gmail.com'>Email</a></div>
+        <div class="col-xs-1"></div>
+      </div> 
+
+    </div>
+  </div> <!--close footer -->
+
+</body>

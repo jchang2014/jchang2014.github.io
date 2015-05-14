@@ -1,38 +1,124 @@
 <!DOCTYPE html>
+
 <head>
+  <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
   <title>Enumerable Methods</title>
   <meta charset="UTF-8">
-  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/style.css">
 </head>
 
-<main>
-  <h1>Enumeration, what's your function?</h1>
-  <header>
-    <h2>About Enumerable#map</h2>
-    <h4>April 11, 2015</h4>
-  </header>
+<body>
+  <div class="container-fluid">
+    <div class= "header">
 
-  <section>
-    <p>
-      The method .map is very handy when you want to transform all the elements in an array. Normally, you could try to use a <strong>for</strong> loop, but this changes the original input array. If you want to transform without having to change the original array, you can use .map to iterate over the array. Additionally, if you actually do want to modify the original array, you simply have to use .map! In either case, .map is an important tool when applying changes over an entire array. 
-    </p>
-    <p>
-      For example, if you went out to eat with your friends and wanted to figure out each person/s bill, you could put the prices into an array. However, rather than add tip to each person's price individually, you could use .map to iterate over the array like so:
-        <code>bill = [4, 5, 7, 8, 10]</code>
-        <code>bill_plus_tip = bill.map { |price| price * 1.2}</code>
-        <code>puts bill_plus_tip.join(", ")  </code>
-        <code><span>#=> 4.8, 6.0, 8.4, 9.6, 12.0</span></code>
-    </p>
-    <p>
-      Not only can you use .map to iterate over number based arrays, you can also use it to transform arrays of strings. Say for example you had an array containing the names of everyone you wanted to invite to a special event. However, you realize you forgot to capitalize the names of everyone in the array. No problem, just use .map to capitalize every name in the array like so:
-        <code>invite = ["john", "mary", "bill", "helen", "erica"]</code>
-        <code>proper_invite = invite.map {|name| name.capitalize}</code>
-        <code>puts proper_invite.join(", ")</code>
-        <code>#=> John, Mary, Bill, Helen, Erica</code>
-    </p>
-    <p>
-      As you can see, enumerables are extremely useful tools in programming that allow us to take a function and apply it numerous times across the values we need them to. This often saves us lots of time and effort, in addition to allowing us to make our code much shorter and easier to read.
-    </p>
-  </section>
+      <div class="blog-post-header-content">
+        <div class="row">
+          <div class="col-xs-12">
+            <h1>Jeffrey Chang</h1>
+            <h3>Student. Researcher. Developer.</h3>
+          </div>
+        </div>
+      </div>
 
-</main>
+      <div class="links">
+        <div class="row">
+          <div class="col-xs-4">
+            <h5><a href="../index.html">Home</a></h5> 
+          </div>
+          <div class="col-xs-4">
+            <h5><a href="index.html">Blog</a></h5>
+          </div>
+          <div class="col-xs-4">
+            <h5><a href="mailto:jeffrey.chang2014@gmail.com">Contact</a></h5>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div> <!--close header-->
+
+  <div class="container">
+    <div class="panel panel-default">
+      <div class="panel-body">
+
+        <div class="title">
+          <div class="row">
+            <div class="col-xs-12">
+              <h1>Enumeration, what's your function?</h1>
+            </div>
+          </div>
+        </div>
+
+        <div class="subtitle">
+          <div class="row">
+            <div class="col-md-6 col-xs-12">
+              <h3>About Enumerable#map</h3>
+            </div>
+
+            <div class="col-md-6 col-xs-12">
+                <h4>April 11, 2015</h4>
+              </div>
+          </div>
+        </div>
+
+        <div class="content">
+          <div class="row">
+            <div class="col-xs-10 col-xs-offset-1">
+              <p>
+                  The method .map is very handy when you want to transform all the elements in an array. Normally, you could try to use a <strong>for</strong> loop, but this changes the original input array. If you want to transform without having to change the original array, you can use .map to iterate over the array. Additionally, if you actually do want to modify the original array, you simply have to use .map! In either case, .map is an important tool when applying changes over an entire array. 
+                </p>
+
+                <p>
+                  For example, if you went out to eat with your friends and wanted to figure out each person/s bill, you could put the prices into an array. However, rather than add tip to each person's price individually, you could use .map to iterate over the array like so:
+                  </p>
+
+                  <p>
+                    <code>bill = [4, 5, 7, 8, 10]</code><br>
+                    <code>bill_plus_tip = bill.map { |price| price * 1.2}</code><br>
+                    <code>puts bill_plus_tip.join(", ")  </code><br>
+                    <code><span>#=> 4.8, 6.0, 8.4, 9.6, 12.0</span></code><br>
+                </p>
+
+                <p>
+                  Not only can you use .map to iterate over number based arrays, you can also use it to transform arrays of strings. Say for example you had an array containing the names of everyone you wanted to invite to a special event. However, you realize you forgot to capitalize the names of everyone in the array. No problem, just use .map to capitalize every name in the array like so:
+                  </p>
+
+                  <p>
+                    <code>invite = ["john", "mary", "bill", "helen", "erica"]</code><br>
+                    <code>proper_invite = invite.map {|name| name.capitalize}</code><br>
+                    <code>puts proper_invite.join(", ")</code><br>
+                    <code>#=> John, Mary, Bill, Helen, Erica</code><br>
+                </p>
+
+                <p>
+                  As you can see, enumerables are extremely useful tools in programming that allow us to take a function and apply it numerous times across the values we need them to. This often saves us lots of time and effort, in addition to allowing us to make our code much shorter and easier to read.
+                </p>
+
+              </div>
+          </div>
+        </div> <!--content-->
+
+      </div> <!--panel-body-->
+    </div> <!--panel-default-->
+  </div> <!--close container-->
+
+  <div class="container-fluid">
+
+    <div class="footer">
+
+      <div class="row">
+        <div class="col-xs-1"></div>
+        <div class="col-xs-2 text-center"><a href='http://www.linkedin.com/pub/jeffrey-chang/92/a43/883/en'>LinkedIn</a></div>
+        <div class="col-xs-2 text-center"><a href='https://github.com/jchang2014/phase-0-unit-1'>GitHub</a></div>
+        <div class="col-xs-2 text-center"><a href='https://plus.google.com/u/0/105667219180191647019'>Google+</a></div>
+        <div class="col-xs-2 text-center"><a href='https://twitter.com/jeffchang2014'>Twitter</a></div>
+        <div class="col-xs-2 text-center"><a href='mailto:jeffrey.chang2014@gmail.com'>Email</a></div>
+        <div class="col-xs-1"></div>
+      </div> 
+
+    </div>
+  </div> <!--close footer -->
+
+</body>

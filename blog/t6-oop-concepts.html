@@ -1,59 +1,148 @@
 <!DOCTYPE html>
+
 <head>
+  <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
   <title>OOP Concepts</title>
   <meta charset="UTF-8">
-  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/style.css">
 </head>
 
-<main>
-  <h1>OOPs, I forgot to mention a few concepts.</h1>
-  <header>
-    <h2>About Blocks, Procs, and Lambdas in Ruby.</h2>
-    <h4>April 25, 2015</h4>
-  </header>
+<body>
+  <div class="container-fluid">
+    <div class= "header">
 
-  <section>
-    <p>
-      So far, we've been using a lot of iterating methods in our challenges. They all have the similar syntax of using either curly brackets or the "do...end" enclosure. The code that lies in between is called the <strong>block</strong>. For example, these highlighted portions are the block:
-        <code>meal = ["Whopper", "Fries", "Coke"]<br>
-        meal.each {<highlight>|item| print "I want an extra large #{item}! "</highlight>}<br>
-        #=>I want an extra large Whopper! I want an extra large Fries! I want an extra large Coke!
-        </code>
-    </p>
-    <p>
-      Now, <strong>Procs</strong>, are convenient tools we can use to save blocks. In this way, we can kind of think of procs as variables in which we store the blocks that we want to run. For example, if we had multiple meals that we wanted to super size, we could do this:
-        <code>meal1 = ["Whopper", "Fries", "Coke"]<br>
-              meal2 = ["Big Mac", "Chicken Nuggets", "Sweet Tea"]<br>
-              <br>
-              <highlight>super_size_me = Proc.new {|item| print "I want an extra large #{item}! "}</highlight><br>
-              <br>
-              meal1.super_size_me<br>
-              #=>I want an extra large Whopper! I want an extra large Fries! I want an extra large Coke!<br>
-              <br>
-              meal2.super_size_me<br>
-              #=>I want an extra large Big Mac! I want an extra large Chicken Nuggets! I want an extra large Sweet Tea!
-        </code>
-    </p>
-    <p>
-      Finally, there are <strong>Lambdas</strong>, which are essentially the same as Procs, but are less controlling in methods. When you use Procs, they take over the method you call them in, but when you use Lambdas, they take care of their business and let the method return to whatever it was doing. Let's look at an example:
-        <methodcode>
-          def proc_method<br>
-          &nbsp&nbspProc.new { return "I'm a Proc!"}.call<br>
-          &nbsp&nbspreturn "Now back to you!"<br>
-          end<br>
-          <br>
-          def lambda_method<br>
-          &nbsp&nbsplambda {return "I'm a Lambda!"}.call<br>
-          &nbsp&nbspreturn "I was never here!"<br>
-          end<br>
-          <br>
-          puts proc_method #=>  I'm a Proc!<br>
-          puts lambda_method #=> I was never here!
-        </methodcode>
-    </p>
-    <p>
-      As you can see, the Proc completely took over the method and ended as soon as it was done with what it had to say. The lambda on the other hand, finished what it had to say, and allowed the method to continue. Hopefully, with these two useful tools in our belt, we can continue on our trip through Ruby as more capable and intelligent developers!
-    </p>
-  </section>
+      <div class="blog-post-header-content">
+        <div class="row">
+          <div class="col-xs-12">
+            <h1>Jeffrey Chang</h1>
+            <h3>Student. Researcher. Developer.</h3>
+          </div>
+        </div>
+      </div>
 
-</main>
+      <div class="links">
+        <div class="row">
+          <div class="col-xs-4">
+            <h5><a href="../index.html">Home</a></h5> 
+          </div>
+          <div class="col-xs-4">
+            <h5><a href="index.html">Blog</a></h5>
+          </div>
+          <div class="col-xs-4">
+            <h5><a href="mailto:jeffrey.chang2014@gmail.com">Contact</a></h5>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div> <!--close header-->
+
+  <div class="container">
+    <div class="panel panel-default">
+      <div class="panel-body">
+
+        <div class="title">
+          <div class="row">
+            <div class="col-xs-12">
+              <h1>OOPs, I forgot to mention a few concepts.</h1>
+            </div>
+          </div>
+        </div>
+
+        <div class="subtitle">
+          <div class="row">
+            <div class="col-md-6 col-xs-12">
+              <h3>About Blocks, Procs, and Lambdas in Ruby.</h3>
+            </div>
+
+            <div class="col-md-6 col-xs-12">
+                <h4>April 25, 2015</h4>
+              </div>
+          </div>
+        </div>
+
+        <div class="content">
+          <div class="row">
+            <div class="col-xs-10 col-xs-offset-1">
+              <p>
+                  So far, we've been using a lot of iterating methods in our challenges. They all have the similar syntax of using either curly brackets or the "do...end" enclosure. The code that lies in between is called the <strong>block</strong>. For example, these highlighted portions are the block:
+                </p>
+
+                <p>
+                    <code>meal = ["Whopper", "Fries", "Coke"]<br>
+                    meal.each {<highlight>|item| print "I want an extra large #{item}! "</highlight>}<br>
+                    #=>I want an extra large Whopper! I want an extra large Fries! I want an extra large Coke!
+                    </code>
+                </p>
+
+                <p>
+                  Now, <strong>Procs</strong>, are convenient tools we can use to save blocks. In this way, we can kind of think of procs as variables in which we store the blocks that we want to run. For example, if we had multiple meals that we wanted to super size, we could do this:
+                  </p>
+
+                  <p>
+                    <code>meal1 = ["Whopper", "Fries", "Coke"]<br>
+                          meal2 = ["Big Mac", "Chicken Nuggets", "Sweet Tea"]<br>
+                          <br>
+                          <highlight>super_size_me = Proc.new {|item| print "I want an extra large #{item}! "}</highlight><br>
+                          <br>
+                          meal1.super_size_me<br>
+                          #=>I want an extra large Whopper! I want an extra large Fries! I want an extra large Coke!<br>
+                          <br>
+                          meal2.super_size_me<br>
+                          #=>I want an extra large Big Mac! I want an extra large Chicken Nuggets! I want an extra large Sweet Tea!
+                    </code>
+                </p>
+
+                <p>
+                  Finally, there are <strong>Lambdas</strong>, which are essentially the same as Procs, but are less controlling in methods. When you use Procs, they take over the method you call them in, but when you use Lambdas, they take care of their business and let the method return to whatever it was doing. Let's look at an example:
+                </p>
+
+                <p>
+                    <code>
+                      def proc_method<br>
+                      &nbsp&nbspProc.new { return "I'm a Proc!"}.call<br>
+                      &nbsp&nbspreturn "Now back to you!"<br>
+                      end<br>
+                      <br>
+                      def lambda_method<br>
+                      &nbsp&nbsplambda {return "I'm a Lambda!"}.call<br>
+                      &nbsp&nbspreturn "I was never here!"<br>
+                      end<br>
+                      <br>
+                      puts proc_method #=>  I'm a Proc!<br>
+                      puts lambda_method #=> I was never here!
+                    </code>
+                </p>
+
+                <p>
+                  As you can see, the Proc completely took over the method and ended as soon as it was done with what it had to say. The lambda on the other hand, finished what it had to say, and allowed the method to continue. Hopefully, with these two useful tools in our belt, we can continue on our trip through Ruby as more capable and intelligent developers!
+                </p>
+
+              </div>
+          </div>
+        </div> <!--content-->
+
+      </div> <!--panel-body-->
+    </div> <!--panel-default-->
+  </div> <!--close container-->
+
+  <div class="container-fluid">
+
+    <div class="footer">
+
+      <div class="row">
+        <div class="col-xs-1"></div>
+        <div class="col-xs-2 text-center"><a href='http://www.linkedin.com/pub/jeffrey-chang/92/a43/883/en'>LinkedIn</a></div>
+        <div class="col-xs-2 text-center"><a href='https://github.com/jchang2014/phase-0-unit-1'>GitHub</a></div>
+        <div class="col-xs-2 text-center"><a href='https://plus.google.com/u/0/105667219180191647019'>Google+</a></div>
+        <div class="col-xs-2 text-center"><a href='https://twitter.com/jeffchang2014'>Twitter</a></div>
+        <div class="col-xs-2 text-center"><a href='mailto:jeffrey.chang2014@gmail.com'>Email</a></div>
+        <div class="col-xs-1"></div>
+      </div> 
+
+    </div>
+  </div> <!--close footer -->
+
+</body>

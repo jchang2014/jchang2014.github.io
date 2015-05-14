@@ -1,32 +1,112 @@
 <!DOCTYPE html>
+
 <head>
+  <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
   <title>CSS Design</title>
   <meta charset="UTF-8">
-  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/style.css">
 </head>
 
-<main>
-  <h1>Margins and Padding are driving me Borderline insane.</h1>
-  <header>
-    <h2>About the CSS Box Model</h2>
-    <h4>March 29th, 2015</h4>
-  </header>
+<body>
+  <div class="container-fluid">
+    <div class= "header">
 
-  <section>
-    <p>
-      <img src="../imgs/box-model.gif" />
-      The box model is the term used in CSS for the way that elements can be positioned for layouts. It consists of 4 concentric square (or rectangular) parts: the content, padding, border, and margin. The innermost part is our content, and each subsequent part is another box surrounding the previous part. 
-    </p>
-    <p>
-      To help understand this concept, and to differentiate each part, I use the example of parking in a parking spot. In a fair world, we would have huge spacious parking spots, and none of us would ever have those annoying dents and scratches on our car doors. Unfortunately, that is far from the case, but if we could use the box model of CSS to change the size of our parking spaces it probably would go something like this:
-    </p>
-    <right><img src="../imgs/car-model.png" /></right>
-    <p>
-      In this case, our car is our "Content." If we're any good at parking, we've parked in the center and not on the lines, so this space between our car and the lines would be the "Padding." If we increase or decrease the padding, it would push the lines further or closer to our car. For the sake of this example, I haven't included the front and back of the car, but the space in front and back would also be considered part of the "Padding" as well. While we're mentioning the lines, those would be considered our "Border," and again for the sake of this example I've left out the left and right sides. We can customize our border by style, thickness, and color. Finally, the space between the lines and the next car over would be considered our "Margin." If we increased the margin, it would push the adjacent element away, or if we decreased it would come closer. 
-    </p>
-    <p>
-      Just imagine how much easier parking would be if we could just use CSS on parking spots!
-    </p>
-  </section>
+      <div class="blog-post-header-content">
+        <div class="row">
+          <div class="col-xs-12">
+            <h1>Jeffrey Chang</h1>
+            <h3>Student. Researcher. Developer.</h3>
+          </div>
+        </div>
+      </div>
 
-</main>
+      <div class="links">
+        <div class="row">
+          <div class="col-xs-4">
+            <h5><a href="../index.html">Home</a></h5> 
+          </div>
+          <div class="col-xs-4">
+            <h5><a href="index.html">Blog</a></h5>
+          </div>
+          <div class="col-xs-4">
+            <h5><a href="mailto:jeffrey.chang2014@gmail.com">Contact</a></h5>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div> <!--close header-->
+
+  <div class="container">
+    <div class="panel panel-default">
+      <div class="panel-body">
+
+        <div class="title">
+          <div class="row">
+            <div class="col-xs-12">
+              <h1>Margins and Padding are driving me Borderline insane.</h1>
+            </div>
+          </div>
+        </div>
+
+        <div class="subtitle">
+          <div class="row">
+            <div class="col-md-6 col-xs-12">
+              <h3>About the CSS Box Model</h3>
+            </div>
+
+            <div class="col-md-6 col-xs-12">
+                <h4>March 29th, 2015</h4>
+              </div>
+          </div>
+        </div>
+
+        <div class="content">
+          <div class="row">
+            <div class="col-xs-10 col-xs-offset-1">
+              <p>
+                  <img src="../imgs/box-model.gif" />
+                  The box model is the term used in CSS for the way that elements can be positioned for layouts. It consists of 4 concentric square (or rectangular) parts: the content, padding, border, and margin. The innermost part is our content, and each subsequent part is another box surrounding the previous part. 
+                </p>
+
+                <p>
+                  To help understand this concept, and to differentiate each part, I use the example of parking in a parking spot. In a fair world, we would have huge spacious parking spots, and none of us would ever have those annoying dents and scratches on our car doors. Unfortunately, that is far from the case, but if we could use the box model of CSS to change the size of our parking spaces it probably would go something like this:
+                </p>
+
+                <right><img src="../imgs/car-model.png"/></right>
+
+                <p>
+                  In this case, our car is our "Content." If we're any good at parking, we've parked in the center and not on the lines, so this space between our car and the lines would be the "Padding." If we increase or decrease the padding, it would push the lines further or closer to our car. For the sake of this example, I haven't included the front and back of the car, but the space in front and back would also be considered part of the "Padding" as well. While we're mentioning the lines, those would be considered our "Border," and again for the sake of this example I've left out the left and right sides. We can customize our border by style, thickness, and color. Finally, the space between the lines and the next car over would be considered our "Margin." If we increased the margin, it would push the adjacent element away, or if we decreased it would come closer. 
+                </p>
+                <p>
+                  Just imagine how much easier parking would be if we could just use CSS on parking spots!
+                </p>
+
+              </div>
+          </div>
+        </div> <!--content-->
+
+      </div> <!--panel-body-->
+    </div> <!--panel-default-->
+  </div> <!--close container-->
+
+  <div class="container-fluid">
+
+    <div class="footer">
+
+      <div class="row">
+        <div class="col-xs-1"></div>
+        <div class="col-xs-2 text-center"><a href='http://www.linkedin.com/pub/jeffrey-chang/92/a43/883/en'>LinkedIn</a></div>
+        <div class="col-xs-2 text-center"><a href='https://github.com/jchang2014/phase-0-unit-1'>GitHub</a></div>
+        <div class="col-xs-2 text-center"><a href='https://plus.google.com/u/0/105667219180191647019'>Google+</a></div>
+        <div class="col-xs-2 text-center"><a href='https://twitter.com/jeffchang2014'>Twitter</a></div>
+        <div class="col-xs-2 text-center"><a href='mailto:jeffrey.chang2014@gmail.com'>Email</a></div>
+        <div class="col-xs-1"></div>
+      </div> 
+
+    </div>
+  </div> <!--close footer -->
+
+</body>

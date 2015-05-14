@@ -1,38 +1,134 @@
 <!DOCTYPE html>
+
 <head>
+  <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
   <title>Arrays and Hashes</title>
   <meta charset="UTF-8">
-  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/style.css">
 </head>
 
-<main>
-  <h1>I'll have the Arrays with a side of Hashes please!</h1>
-  <header>
-    <h2>About Using Arrays and Hashes in Ruby.</h2>
-    <h4>April 4th, 2015</h4>
-  </header>
+<body>
+  <div class="container-fluid">
+    <div class= "header">
 
-  <section>
-    <p>
-      Arrays and hashes are very useful tools for storing information in Ruby, but it's very easy to get confused between the two. Both are contained in brackets, both can be used to store lists of numbers and strings, and both can be accessed using "indexes". However, the fundamental difference lies in the latter similarity.
-    </p> 
-    <p>
-      Arrays are essentially lists of elements(numbers or strings), that are contained within a set of square brackets([]). They are very useful for just that, holding lists of information. Let's say you wanted to go grocery shopping, and wanted to make a list of the things you wanted to buy at the store. If for some reason you bring around a Ruby terminal instead of a pen and paper, you could store this list in an array like so:
-        <code>shopping_list = ['Milk', 'Eggs', 'Bread', 'Chicken', 'Salad']</code>
-      Now a list isn't very useful unless you can refer to it later, so you would need a way to call out what you've stored. Luckily, when we input values into arrays, they are automatically assigned "indexes" according to the order they've been entered. Programmers start counting from 0 though, so the first value's index is 0, the second is 1, and so on. So, if we wanted to call up the 3rd item in the list(Bread), we would type this:
-        <code>puts shopping_list[2]</code> 
-    </p>
-    <p>
-      Now, hashes are quite similar, but work in a slightly different way. Like arrays, they store lists of information, but this time are contained in curly brackets({}). And this time, instead of just listing each value and having the index be automatically assigned, we choose what index is assigned to each value like so:
-        <code>shopping_list = {'Milk' => $3.50, 'Eggs' => $2.00, 'Bread' => $2.50, 'Chicken' => $6.00, 'Salad' => $4.50}</code>
-      </p>
-      <p>
-        This is potentially useful if you're trying to budget out how much you're going to spend at the store, or if you want to calculate how much money you may need to bring. It's also useful for the store itself so that they know how much to charge you. Now, if we want to figure out how much bread costs($2.50), all we would have to do is type this:
-        <code>puts shopping_list['Bread']</code>
-    </p>
-    <p>
-      Hopefully now you know a little bit more about arrays and hashes, and know how and when to use them! 
-    </p>
-  </section>
+      <div class="blog-post-header-content">
+        <div class="row">
+          <div class="col-xs-12">
+            <h1>Jeffrey Chang</h1>
+            <h3>Student. Researcher. Developer.</h3>
+          </div>
+        </div>
+      </div>
 
-</main>
+      <div class="links">
+        <div class="row">
+          <div class="col-xs-4">
+            <h5><a href="../index.html">Home</a></h5> 
+          </div>
+          <div class="col-xs-4">
+            <h5><a href="index.html">Blog</a></h5>
+          </div>
+          <div class="col-xs-4">
+            <h5><a href="mailto:jeffrey.chang2014@gmail.com">Contact</a></h5>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div> <!--close header-->
+
+  <div class="container">
+    <div class="panel panel-default">
+      <div class="panel-body">
+
+        <div class="title">
+          <div class="row">
+            <div class="col-xs-12">
+              <h1>I'll have the Arrays with a side of Hashes please!</h1>
+            </div>
+          </div>
+        </div>
+
+        <div class="subtitle">
+          <div class="row">
+            <div class="col-md-6 col-xs-12">
+              <h3>About Using Arrays and Hashes in Ruby.</h3>
+            </div>
+
+            <div class="col-md-6 col-xs-12">
+                <h4>April 4th, 2015</h4>
+              </div>
+          </div>
+        </div>
+
+        <div class="content">
+          <div class="row">
+            <div class="col-xs-10 col-xs-offset-1">
+              <p>
+                  Arrays and hashes are very useful tools for storing information in Ruby, but it's very easy to get confused between the two. Both are contained in brackets, both can be used to store lists of numbers and strings, and both can be accessed using "indexes". However, the fundamental difference lies in the latter similarity.
+                </p> 
+
+                <p>
+                  Arrays are essentially lists of elements(numbers or strings), that are contained within a set of square brackets([]). They are very useful for just that, holding lists of information. Let's say you wanted to go grocery shopping, and wanted to make a list of the things you wanted to buy at the store. If for some reason you bring around a Ruby terminal instead of a pen and paper, you could store this list in an array like so:
+                  </p>
+
+                  <p>
+                    <code>shopping_list = ['Milk', 'Eggs', 'Bread', 'Chicken', 'Salad']</code>
+                  </p>
+
+                  <p>
+                  Now a list isn't very useful unless you can refer to it later, so you would need a way to call out what you've stored. Luckily, when we input values into arrays, they are automatically assigned "indexes" according to the order they've been entered. Programmers start counting from 0 though, so the first value's index is 0, the second is 1, and so on. So, if we wanted to call up the 3rd item in the list(Bread), we would type this:
+                  </p>
+
+                  <p>
+                    <code>puts shopping_list[2]</code> 
+                </p>
+
+                <p>
+                  Now, hashes are quite similar, but work in a slightly different way. Like arrays, they store lists of information, but this time are contained in curly brackets({}). And this time, instead of just listing each value and having the index be automatically assigned, we choose what index is assigned to each value like so:
+                  </p>
+
+                  <p>
+                    <code>shopping_list = {'Milk' => $3.50, 'Eggs' => $2.00, 'Bread' => $2.50, 'Chicken' => $6.00, 'Salad' => $4.50}</code>
+                  </p>
+
+                <p>
+                    This is potentially useful if you're trying to budget out how much you're going to spend at the store, or if you want to calculate how much money you may need to bring. It's also useful for the store itself so that they know how much to charge you. Now, if we want to figure out how much bread costs($2.50), all we would have to do is type this:
+                  </p>
+
+                  <p>
+                    <code>puts shopping_list['Bread']</code>
+                </p>
+
+                <p>
+                  Hopefully now you know a little bit more about arrays and hashes, and know how and when to use them! 
+                </p>
+
+              </div>
+          </div>
+        </div> <!--content-->
+
+      </div> <!--panel-body-->
+    </div> <!--panel-default-->
+  </div> <!--close container-->
+
+  <div class="container-fluid">
+
+    <div class="footer">
+
+      <div class="row">
+        <div class="col-xs-1"></div>
+        <div class="col-xs-2 text-center"><a href='http://www.linkedin.com/pub/jeffrey-chang/92/a43/883/en'>LinkedIn</a></div>
+        <div class="col-xs-2 text-center"><a href='https://github.com/jchang2014/phase-0-unit-1'>GitHub</a></div>
+        <div class="col-xs-2 text-center"><a href='https://plus.google.com/u/0/105667219180191647019'>Google+</a></div>
+        <div class="col-xs-2 text-center"><a href='https://twitter.com/jeffchang2014'>Twitter</a></div>
+        <div class="col-xs-2 text-center"><a href='mailto:jeffrey.chang2014@gmail.com'>Email</a></div>
+        <div class="col-xs-1"></div>
+      </div> 
+
+    </div>
+  </div> <!--close footer -->
+
+</body>

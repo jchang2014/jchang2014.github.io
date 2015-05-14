@@ -17,7 +17,7 @@ body {
 }
 
 .blog-post-header-content {
-	background-image: url("../imgs/rsz_SanDiego_header.jpg");
+	background-image: url("../imgs/rsz_sandiego_header.jpg");
 	background-size: cover;
 	height:350px;
 	color:white;
@@ -108,10 +108,26 @@ h1, h2, h3, h4, h5 {
 	margin-top:20px;
 }
 
-.content img {
+.content p img {
 	float: left;
 	height:20em;
 	width:20em;
 	padding-right:15px;
 	margin-bottom:10px;
+}
+
+.content right img {
+	float:right;
+	width:20em;
+	height:20em;
+	padding-left:15px;
+	margin-top:10px;
+}
+
+.content center img {
+	margin-left:auto;
+	margin-right:auto;
+	width:800px;
+	height:15em;
+	padding-left:25px;
 }

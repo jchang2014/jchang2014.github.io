@@ -1,29 +1,105 @@
 <!DOCTYPE html>
+
 <head>
+  <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
   <title>Tech</title>
   <meta charset="UTF-8">
-  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/style.css">
 </head>
 
-<main>
-  <h1>How the Internet Works.</h1>
-  <header>
-    <h2>Sorry, no pun this week.</h2>
-    <h4>May 9th, 2015</h4>
-  </header>
+<body>
+  <div class="container-fluid">
+    <div class= "header">
 
-  <section>
-    <p>
-      <img src="http://s.hswstatic.com/gif/internet-diagram.gif"/>
-      The invention of the Internet has arguably come to encompass every facet of our every day lives. Almost all of the technology used today incorporates the Internet, and it's hard to imagine what our lives would be without it. Yet, most people don't really understand what the Internet is, let alone how it works. When we think of the Internet, we think of going online to our favorite websites, but we're actually thinking of the World Wide Web. You see the Web, Instant Messsaging, and file sharing are all just things we use that run on the Internet.  
-    </p>
-    <p>
-      So what then is the Internet really? The Internet is like a massive highway of networks all connected to each other through cables and wireless signals. Everything from routers and computers to smartphones and satellites are all linked up to the Internet. On the supply end, servers store and distribute information, while crossing through connection hubs called nodes. From there, the nodes will send the information along to end points such as laptops and smartphones called clients. Of course, it may not actually be as simple as that 3 point system. The information can be bounced around a dozen times before it reaches its intended goal, it really depends on how it's sent. Information can be sent in one of two ways: circuit switching and packet switching. Back in the days when we had to use dial-up, we were always using packet circuit switching for connections. With this method, the two points are directly connected, send the data all in one piece, and can't be connected to anything else. This is basically like a phone call; no one else can call you while you're on a call. In contrast, packet switching involves breaking up the data into several packets, and sends them through different routes. This is a much more efficient method, as you can be connected to several things at once, and you don't need a permanenet connection.
-    </p>
-    <p>
-      Of course, information can't be exchanged without a language. In this case, the Internet uses a variety of different protocols, or sets of rules that the machines must follow in order to perform a function. For example, when we view websites we always type "http" before the url. HTTP stands for HyperText Transfer Protocol. Similarly, if you've ever seen FTP while downloading files, you've encountered the File Transfer Protocol. Finally, there's the TCP/IP or Transmission Control Protocol/Internet Protocol, which is the main control system of the Internet. TCP sorts out how data moves back and forth in packets, regulating everything from disassembly, route, and re-assembly. The IP address is how we label all the machines on the Internet, and helps identify where data comes from and where it should go.
-    </p>
-      <!-- copy and paste as many sections as you want to add paragraphs -->
-  </section>
+      <div class="blog-post-header-content">
+        <div class="row">
+          <div class="col-xs-12">
+            <h1>Jeffrey Chang</h1>
+            <h3>Student. Researcher. Developer.</h3>
+          </div>
+        </div>
+      </div>
 
-</main>
+      <div class="links">
+        <div class="row">
+          <div class="col-xs-4">
+            <h5><a href="../index.html">Home</a></h5> 
+          </div>
+          <div class="col-xs-4">
+            <h5><a href="index.html">Blog</a></h5>
+          </div>
+          <div class="col-xs-4">
+            <h5><a href="mailto:jeffrey.chang2014@gmail.com">Contact</a></h5>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div> <!--close header-->
+
+  <div class="container">
+    <div class="panel panel-default">
+      <div class="panel-body">
+
+        <div class="title">
+          <div class="row">
+            <div class="col-xs-12">
+              <h1>How the Internet Works.</h1>
+            </div>
+          </div>
+        </div>
+
+        <div class="subtitle">
+          <div class="row">
+            <div class="col-md-6 col-xs-12">
+              <h3>Sorry, no pun this week.</h3>
+            </div>
+
+            <div class="col-md-6 col-xs-12">
+                <h4>May 9th, 2015</h4>
+              </div>
+          </div>
+        </div>
+
+        <div class="content">
+          <div class="row">
+            <div class="col-xs-10 col-xs-offset-1">
+              <p>
+                  <img src="http://s.hswstatic.com/gif/internet-diagram.gif"/>
+                  The invention of the Internet has arguably come to encompass every facet of our every day lives. Almost all of the technology used today incorporates the Internet, and it's hard to imagine what our lives would be without it. Yet, most people don't really understand what the Internet is, let alone how it works. When we think of the Internet, we think of going online to our favorite websites, but we're actually thinking of the World Wide Web. You see the Web, Instant Messsaging, and file sharing are all just things we use that run on the Internet.  
+                </p>
+                <p>
+                  So what then is the Internet really? The Internet is like a massive highway of networks all connected to each other through cables and wireless signals. Everything from routers and computers to smartphones and satellites are all linked up to the Internet. On the supply end, servers store and distribute information, while crossing through connection hubs called nodes. From there, the nodes will send the information along to end points such as laptops and smartphones called clients. Of course, it may not actually be as simple as that 3 point system. The information can be bounced around a dozen times before it reaches its intended goal, it really depends on how it's sent. Information can be sent in one of two ways: circuit switching and packet switching. Back in the days when we had to use dial-up, we were always using packet circuit switching for connections. With this method, the two points are directly connected, send the data all in one piece, and can't be connected to anything else. This is basically like a phone call; no one else can call you while you're on a call. In contrast, packet switching involves breaking up the data into several packets, and sends them through different routes. This is a much more efficient method, as you can be connected to several things at once, and you don't need a permanenet connection.
+                </p>
+                <p>
+                  Of course, information can't be exchanged without a language. In this case, the Internet uses a variety of different protocols, or sets of rules that the machines must follow in order to perform a function. For example, when we view websites we always type "http" before the url. HTTP stands for HyperText Transfer Protocol. Similarly, if you've ever seen FTP while downloading files, you've encountered the File Transfer Protocol. Finally, there's the TCP/IP or Transmission Control Protocol/Internet Protocol, which is the main control system of the Internet. TCP sorts out how data moves back and forth in packets, regulating everything from disassembly, route, and re-assembly. The IP address is how we label all the machines on the Internet, and helps identify where data comes from and where it should go.
+                </p>
+
+              </div>
+          </div>
+        </div> <!--content-->
+
+      </div> <!--panel-body-->
+    </div> <!--panel-default-->
+  </div> <!--close container-->
+
+  <div class="container-fluid">
+
+    <div class="footer">
+
+      <div class="row">
+        <div class="col-xs-1"></div>
+        <div class="col-xs-2 text-center"><a href='http://www.linkedin.com/pub/jeffrey-chang/92/a43/883/en'>LinkedIn</a></div>
+        <div class="col-xs-2 text-center"><a href='https://github.com/jchang2014/phase-0-unit-1'>GitHub</a></div>
+        <div class="col-xs-2 text-center"><a href='https://plus.google.com/u/0/105667219180191647019'>Google+</a></div>
+        <div class="col-xs-2 text-center"><a href='https://twitter.com/jeffchang2014'>Twitter</a></div>
+        <div class="col-xs-2 text-center"><a href='mailto:jeffrey.chang2014@gmail.com'>Email</a></div>
+        <div class="col-xs-1"></div>
+      </div> 
+
+    </div>
+  </div> <!--close footer -->
+
+</body>
