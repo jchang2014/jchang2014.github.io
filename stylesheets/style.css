@@ -31,18 +31,18 @@ body {
 	background: #175B7F;
 }
 
-h1, h3, h4, h5 {
+h1, h2, h3, h4, h5 {
 	text-align: center;
 	font-weight:bold;
 }
 
 .about {
-	padding-top:50px;
-	padding-bottom:50px;
+	padding-top:10px;
+	padding-bottom:15px;
 	text-align:center;
 }
 
-.about h3, h4 , .blogs h3{
+.about h3, h4 , .blogs h3 {
 	padding-bottom:20px;
 }
 
@@ -64,11 +64,46 @@ h1, h3, h4, h5 {
 
 /* blog index */
 .blogs {
-	padding-top:25px;
-	padding-bottom:50px;
+	padding-top:10px;
+	padding-bottom:35px;
 	text-align:center;
 }
 
 .cheatsheets {
 	padding-top:25px;
+}
+
+
+/* blog template */
+.title h1 {
+	text-align:left;
+	margin-top:15px;
+	color:#175B7F;
+}
+
+.subtitle h3 {
+	text-align:left;
+	font-style:italic;
+	color:#175B7F;
+}
+
+.subtitle h4 {
+	text-align:right;
+	padding-top:15px;
+	padding-bottom:0px;
+	color:#175B7F;
+}
+
+.subtitle {
+	border-bottom: 2px solid gray;
+	margin-top:-15px;
+}
+
+.content {
+	margin-top:15px;
+	text-indent:2em;
+}
+
+.panel.panel-default {
+	margin-top:20px;
 }
