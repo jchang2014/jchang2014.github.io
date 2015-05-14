@@ -16,6 +16,13 @@ body {
 	height:350px;
 }
 
+.blog-post-header-content {
+	background-image: url("../imgs/rsz_SanDiego_header.jpg");
+	background-size: cover;
+	height:350px;
+	color:white;
+}
+
 .header a, .footer a {
 	color:white;
 }
