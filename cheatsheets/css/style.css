@@ -1,0 +1,24 @@
+
+h1,h2,h3, h4 {
+	text-align: center;
+}
+
+.intro-header{
+	background: url('http://static1.squarespace.com/static/52444aeee4b0a6b4ebac530f/524457e8e4b0d08691bdabc5/5360026ee4b08c41d0c61cb5/1400450209809/code_screenshot.jpg?format=1500w')no-repeat center;
+	height: 400px;
+	background-size: cover;
+	position: relative;
+	margin-bottom: 20px;
+}
+
+.intro-header .intro-header-content {
+	position:absolute;
+	color: #FFF;
+	top: 35%;
+	left: 35%;
+}
+
+#define, #interact, #function{
+	border-top: 1px solid #000;
+	padding-bottom:20px;
+}
