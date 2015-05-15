@@ -72,25 +72,27 @@
 
                 <p>
                   For example, if you went out to eat with your friends and wanted to figure out each person/s bill, you could put the prices into an array. However, rather than add tip to each person's price individually, you could use .map to iterate over the array like so:
-                  </p>
-
-                  <p>
-                    <code>bill = [4, 5, 7, 8, 10]</code><br>
-                    <code>bill_plus_tip = bill.map { |price| price * 1.2}</code><br>
-                    <code>puts bill_plus_tip.join(", ")  </code><br>
-                    <code><span>#=> 4.8, 6.0, 8.4, 9.6, 12.0</span></code><br>
                 </p>
+
+                <pre>
+                  bill = [4, 5, 7, 8, 10]
+                  bill_plus_tip = bill.map { |price| price * 1.2}
+                  puts bill_plus_tip.join(", ") 
+                   
+                  #=> 4.8, 6.0, 8.4, 9.6, 12.0
+                </pre>
 
                 <p>
                   Not only can you use .map to iterate over number based arrays, you can also use it to transform arrays of strings. Say for example you had an array containing the names of everyone you wanted to invite to a special event. However, you realize you forgot to capitalize the names of everyone in the array. No problem, just use .map to capitalize every name in the array like so:
-                  </p>
-
-                  <p>
-                    <code>invite = ["john", "mary", "bill", "helen", "erica"]</code><br>
-                    <code>proper_invite = invite.map {|name| name.capitalize}</code><br>
-                    <code>puts proper_invite.join(", ")</code><br>
-                    <code>#=> John, Mary, Bill, Helen, Erica</code><br>
                 </p>
+
+                <pre>
+                  invite = ["john", "mary", "bill", "helen", "erica"]
+                  proper_invite = invite.map {|name| name.capitalize}
+                  puts proper_invite.join(", ")
+
+                  #=> John, Mary, Bill, Helen, Erica
+                </pre>
 
                 <p>
                   As you can see, enumerables are extremely useful tools in programming that allow us to take a function and apply it numerous times across the values we need them to. This often saves us lots of time and effort, in addition to allowing us to make our code much shorter and easier to read.
